@@ -75,7 +75,8 @@ function getPrimitive(){
 function toggleHelpCredits(){
 	["credits", "instructions"].forEach(function(id){
 		var el = document.getElementById(id);
-		el.style.display = el.style.display === 'block' ? 'none' : 'block';
+		console.log(el.style.display);
+		el.style.display = el.style.display === 'block' || el.style.display === '' ? 'none' : 'block';
 	});
 }
 
